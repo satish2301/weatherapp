@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="container-fluid main_menu">
+        <div class="row ">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"><i class="fa fa-snowflake mr-2"></i>MCA_WALE<i
+                            class="fa fa-snowflake ml-2"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=" toggle text-white ">☰</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active ">
+                                <a class="nav-link ml-3" href="/">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link ml-3" href="/weather">Weather</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link ml-3" href="/about">About</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+    <!-- hero section start -->
+    <div class="container-fluid weather">
+        <div class="row ">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-8 col-12 mx-auto">
+                        <div class="inputsection">
+                            <input type="text" placeholder="Search by name" id="search" />
+                           
+                        </div>
+                        <div class="text-center mt-4">
+                             <button class="btn btn-primary searchbtn" onclick="submitbtn()">search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mx-auto col-12">
+                        <div class="weather_card">
+                            <div class="day_date">
+                                <p id="day">Time</p>
+                                <p id="date">Date</p>
+                            </div>
+                            <div>
+                                <p id="cityname" class="text-center mt-3">CityName<span>,</span><span
+                                        id="country">Country</span></p>
+                            </div>
+                            <div class="temp_section">
+                                <p class="mt-4" id="temp"><sup>0</sup>C</p></span>
+                                <p id="icon_temp"><i class="fas fa-cloud"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <div class="container-fluid  footer">
+        <div class="row ">
+            <div class="col-md-10 col-12 mx-auto">
+                <div>
+                    <p>Copyright ♥ 2022 by mca_wale</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        function main() {
+            const currdate = new Date().toLocaleDateString();
+            const currtime = new Date().toLocaleTimeString();
+            {{!-- console.log(currdate);
+            console.log(currtime); --}}
+            day.innerHTML = currtime;
+            date.innerHTML=currdate;
+
+        }
+        main();
+    </script>
+</body>
+
+</html>

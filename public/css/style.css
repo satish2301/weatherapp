@@ -1,0 +1,254 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main_menu{
+    background-color: #222;
+}
+.row{
+    margin: 0%;
+}
+.toggle{
+    font-size: 2.5rem;
+}
+nav{
+    background-color:#222;
+
+}
+nav .navbar-brand{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+nav a{
+    font-size: 2rem;
+}
+.fa-snowflake{
+    animation: round 5s linear infinite;
+}
+@keyframes round{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* navbar end */
+
+
+/* hero start */
+.hero{
+    padding-top: 5rem;
+}
+.hero_left{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    align-items: center;
+    justify-content: center;
+}
+.hero_left .first_heading{
+   
+    text-transform: uppercase;
+}
+.hero_left p{
+    text-transform: capitalize;
+   font-size: 2.4rem;
+}
+.hero_right img{
+    width: 100%;
+}
+.hero_left button{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.profile_left .profile{
+    width: 80%;
+    border-radius: 2rem;
+}
+.profile_right{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile_right .first_heading{
+    font-size:2rem;
+   font-weight: 900;
+}
+.profile_right p{
+  font-size: 3rem;
+
+}
+.profile_right button{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.weather{
+    padding-top: 9rem;
+
+}
+
+.inputsection{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+}
+.inputsection input{
+    width: 100%;
+    padding: 0.3rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #222;
+    font-size: 2rem;
+   
+}
+.searchbtn{
+margin-left: -70px;
+padding: 0.7rem;
+width: 12rem;
+font-size: 1.5rem;
+border-radius: 2rem;
+}
+.weather .weather_card{
+    padding: 8rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color:#111;
+    margin-top: 7rem;
+    padding: 2rem;
+    color: wheat;
+    font-weight: bold;
+    font-family:"roboto",sans-serif;
+}
+.weather .weather_card .day_date{
+    display: flex;
+    justify-content: space-between;
+    background-color:#eee;
+    border-radius: 20px;
+    padding: 0px 30px;
+    color: black;
+}
+#day{
+    font-size: 2rem;
+}
+#date{
+    font-size: 2rem;
+}
+.temp_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6rem;
+}
+#temp{
+    font-size: 2.5rem;
+}
+.temp_add{
+    font-size: 2.5rem;
+    margin-left: -120px;
+}
+#icon_temp{
+    font-size: 3rem;
+    margin-top: 1rem;
+    /* color: yellow; */
+}
+#cityname{
+    font-size: 2rem;
+}
+.footer{
+    background-color: #222;
+    position: absolute;
+    bottom: 0;
+   
+}
+.footer p{
+    font-size: 2rem;
+    text-align: center;
+    color: wheat;
+}
+
+
+/* responsive */
+
+@media(max-width:768px){
+    .hero{
+        padding-top: 0px;
+    }
+    .hero_left{
+       height: auto;
+       margin: 6rem 0;
+    }
+    .hero_right{
+        height: auto;
+        margin-top: 6rem;
+    }
+    .profile_left{
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .profile_right{
+        height: 30rem;
+    }
+   
+   
+    .hero_right img{
+        width: 100%;
+    
+    }
+    .inputsection input{
+        width:auto;
+    }
+    html{
+        font-size: 60%;
+    }
+    .weather .weather_card{
+        width: 100%;
+        height: auto;
+    
+    }
+    .weather .weather_card .day_date{
+        display: flex;
+        justify-content: space-between;
+        background-color:#eee;
+        border-radius: 20px;
+        padding: 0px 30px;
+        color: black;
+        align-items: center;
+    }
+   #day{
+    font-size: 1.5rem;
+   }
+   #date{
+    font-size: 1.5rem;
+   }
+   .weather{
+    align-items: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+   }
+}
